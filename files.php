@@ -49,6 +49,7 @@ $scann = scandir($path);
     <h1>Simple file manager</h1>
     <hr>
     <table border="1">
+    <thead>
         <tr>
             <th>
                 file
@@ -65,9 +66,7 @@ $scann = scandir($path);
                 <a href="del.php/?hapus=<?=$hasil_scann;?>">Hapus</a>
             </td>
         </tr><?php endforeach;?>
-
-
-
+        </thead>
     </table>
 
 </body>
