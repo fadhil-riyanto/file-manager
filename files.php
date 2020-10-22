@@ -51,7 +51,7 @@ $scann = scandir($path);
     <table border="1">
         <tr>
             <th>
-                filename
+                file
             </th>
             <th>
                 delete
