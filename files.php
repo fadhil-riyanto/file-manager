@@ -9,43 +9,11 @@ $scann = scandir($path);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>File manager</title>
+    <link rel="stylesheet" type="text/css" href="style_table.css">
 </head>
 
 <body>
-    <style>
-        ort {
-            width: 50px;
-        }
-
-        .normal {
-            width: 150px;
-        }
-
-        table {
-            border-collapse: collapse;
-            font-family: arial;
-            color: #5E5B5C;
-        }
-
-        th {
-            text-align: left;
-            padding: 10px;
-        }
-
-        td {
-            border-top: 1px solid #e3e3e3;
-            padding: 10px;
-        }
-
-        tr:nth-child(even) {
-            background: #F6F5FA;
-        }
-
-        tr:hover {
-            background: #EAE9F5
-        }
-    </style>
-    </style>
+    
     <h1>Simple file manager</h1>
     <hr>
     <table border="1">
