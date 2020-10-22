@@ -58,6 +58,8 @@ $scann = scandir($path);
                 delete
             </th>
         </tr>
+        </thead>
+        <tbody>
         <tr><?php foreach ($scann as $hasil_scann):?>
             <td>
                 <a href="<?=$hasil_scann;?>"><?=$hasil_scann;?></a>
@@ -66,7 +68,7 @@ $scann = scandir($path);
                 <a href="del.php/?hapus=<?=$hasil_scann;?>">Hapus</a>
             </td>
         </tr><?php endforeach;?>
-        </thead>
+        </tbody>
     </table>
 
 </body>
