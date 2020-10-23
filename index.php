@@ -25,6 +25,9 @@ $scann = scandir($path);
             <th>
                 delete
             </th>
+            <th>
+                rename
+            </th>
         </tr>
         </thead>
         <tbody>
@@ -34,6 +37,9 @@ $scann = scandir($path);
             </td>
             <td>
                 <a href="del.php/?hapus=<?=$hasil_scann;?>">Hapus</a>
+            </td>
+            <td>
+                <a href="rename.php/?ubah=<?=$hasil_scann;?>">Rename</a>
             </td>
         </tr><?php endforeach;?>
         </tbody>
