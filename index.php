@@ -39,7 +39,7 @@ $scann = scandir($path);
                 <a href="del.php?hapus=<?=$hasil_scann;?>">Hapus</a>
             </td>
             <td>
-                <a href="rename.php/?ubah=<?=$hasil_scann;?>">Rename</a>
+                <a href="rename.php?ubah=<?=$hasil_scann;?>">Rename</a>
             </td>
         </tr><?php endforeach;?>
         </tbody>

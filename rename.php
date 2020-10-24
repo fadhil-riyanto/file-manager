@@ -23,12 +23,4 @@ if($_SERVER["REQUEST_METHOD"] == "GET"){
         }
         //ubah nama file dari tangkapan variabel di $_GET variable
         rename($nama_file, $nama_file_ubah);
-        
-        $sum = 0;
-  
-        for ($i = 0; $i <= ($n - 1); $i++) {
-          $sum += (1 / (1 + (3*$i)));
-        }
-        
-        return number_format($sum, 2, '.', '');
 }?>
