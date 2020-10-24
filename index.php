@@ -1,5 +1,5 @@
 <?php
-$path = "C:/laragon/www";
+$path = "C:/laragon/www/file";
 $scann = scandir($path);
 ?>
 <!DOCTYPE html>
@@ -36,7 +36,7 @@ $scann = scandir($path);
                 <a href="<?=$hasil_scann;?>"><?=$hasil_scann;?></a>
             </td>
             <td>
-                <a href="del.php/?hapus=<?=$hasil_scann;?>">Hapus</a>
+                <a href="del.php?hapus=<?=$hasil_scann;?>">Hapus</a>
             </td>
             <td>
                 <a href="rename.php/?ubah=<?=$hasil_scann;?>">Rename</a>

@@ -8,12 +8,12 @@ if(isset($_GET["hapus"])){
             //hapus si direktori nya
             rmdir($nama_file);
             //kembalikan user ke halaman utama
-            header("location: /index.php");
+            header("location: /file/index.php");
 //Kalau yang di terima bukan direktori, melainkan file
 }else{
     //hapus nama file dari tangkapan variabel di $_GET variable
     unlink($nama_file);
     //kebalikan user ke awal
-    header("location: /index.php");
+    header("location: /file/index.php");
    
 }}?>

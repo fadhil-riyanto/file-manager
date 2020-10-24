@@ -6,33 +6,29 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="" method="post">
+    <form action="" method="GET">
     <p>Rename file</p>
-    <input type="text">
+    <input type="text" name="perubahan">
     <button type="submit">Rubah!</button>
     </form>
 </body>
 </html>
 <?php
-//Kalau var yang di kirim ada isinya maka ia akan di cek
-if(isset($_GET["ubah"])){
-    //kalau udah di cek maka terima data dari get
-    $nama_file =$_GET["ubah"];
-    //Jika ia adalah direktory maka
-        if(is_dir($nama_file)){
-            //ubah si direktori nya
-            echo "Itu bukan file!";
-            //kembalikan user ke halaman utama
-            //header("location: /index.php");
-//Kalau yang di terima bukan direktori, melainkan file
-}else{
-    //ubah nama file dari tangkapan variabel di $_GET variable
-    //unlink($nama_file);
-    //rename("hai.txt", "my_file.txt");
-    //kebalikan user ke awal
-    //header("location: /index.php");
-   
-}}?>
 
-rename("hai.txt", "my_file.txt");
-?>
+if($_SERVER["REQUEST_METHOD"] == "GET"){
+    $nama_file =$_GET["ubah"];
+    $nama_file_ubah = $_GET["perubahan"];
+        if(empty($nama_file_ubah)){
+            echo "Mohon isi nama file";
+        }
+        //ubah nama file dari tangkapan variabel di $_GET variable
+        rename($nama_file, $nama_file_ubah);
+        
+        $sum = 0;
+  
+        for ($i = 0; $i <= ($n - 1); $i++) {
+          $sum += (1 / (1 + (3*$i)));
+        }
+        
+        return number_format($sum, 2, '.', '');
+}?>
