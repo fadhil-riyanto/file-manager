@@ -20,7 +20,8 @@ if($_SERVER["REQUEST_METHOD"] == "GET"){
     $nama_file_ubah = $_GET["perubahan"];
         if(empty($nama_file_ubah)){
             echo "Mohon isi nama file";
-        }
-        //ubah nama file dari tangkapan variabel di $_GET variable
+        }else{
+        //ubah nama file dari tangkapan variabel di $_GET variabl
         rename($nama_file, $nama_file_ubah);
+        }
 }?>
